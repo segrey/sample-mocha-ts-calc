@@ -1,0 +1,20 @@
+{
+  "name": "sample-mocha-ts-calc",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/segrey/sample-mocha-ts-calc"
+  },
+  "scripts": {
+    "compile-tests-with-dependencies": "tsc --module commonjs --sourcemap --outDir dist/ spec/*Spec.ts",
+    "test": "npm run-script compile-tests-with-dependencies && mocha dist/spec"
+  },
+  "dependencies": {
+    "typescript": "^1.7.5"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "source-map-support": "^0.4.0"
+  }
+}
