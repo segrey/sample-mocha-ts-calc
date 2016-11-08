@@ -1,11 +1,11 @@
-/// <reference path="../typings/mocha/mocha.d.ts" />
-/// <reference path="../typings/chai/chai.d.ts" />
+/// <reference path="../typings/globals/mocha/index.d.ts" />
+/// <reference path="../typings/modules/chai/index.d.ts" />
 import Calculator from '../lib/Calculator';
 import chai = require('chai');
-var expect = chai.expect;
+const expect = chai.expect;
 
 describe('Calculator', () => {
-  var calc:Calculator;
+  let calc: Calculator;
 
   beforeEach(function () {
     calc = new Calculator();
