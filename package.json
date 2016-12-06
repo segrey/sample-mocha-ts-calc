@@ -7,7 +7,7 @@
     "url": "https://github.com/segrey/sample-mocha-ts-calc"
   },
   "scripts": {
-    "compile-tests-with-dependencies": "tsc --module commonjs --sourcemap --outDir dist/ spec/*Spec.ts",
+    "compile-tests-with-dependencies": "tsc --module commonjs --sourcemap --outDir dist/ spec/*Spec.ts spec_tdd/*_spec.ts",
     "test": "npm run-script compile-tests-with-dependencies && mocha dist/spec"
   },
   "dependencies": {
